@@ -25,9 +25,8 @@ Thumbs.db
 *.synctex.gz
 *.fls
 *.fdb_latexmk
-*.tex
 
-# Data files (too large for git)
+# Data files
 *.csv
 *.pdf
 data/
@@ -35,8 +34,10 @@ data/
 # Node
 node_modules/
 
-# Env (keep .env.example instead)
-# .env  ← we'll track .env since it has no secrets
+# Environment
+.env
+.env.*
+!.env.example
 
-# Temp
+# Temporary output
 %OUTDIR%/
