@@ -1,4 +1,4 @@
-# PQG6 — Post-Quantum 6G Network Security Analytics
+# PQ6G — Post-Quantum 6G Network Security Analytics
 
 > A hybrid security layer combining NIST-standardized post-quantum cryptography (PQC) with real-time, stream-based intrusion detection for next-generation 6G infrastructure.
 
@@ -9,7 +9,7 @@ Ansh Raj Rath · Abiruth S. · Aditya Krishna Samant · Dinesh Karthikeyan
 
 ## Overview
 
-PQG6 simulates a 6G network environment protected by quantum-resistant cryptography (Kyber-768 + Dilithium-3 via liboqs), generates labeled attack traffic using NS-3, streams it through Apache Kafka, detects attacks in real-time with Apache Flink, trains an ML classifier with Apache Spark, and visualizes everything on a live dashboard.
+PQ6G simulates a 6G network environment protected by quantum-resistant cryptography (Kyber-768 + Dilithium-3 via liboqs), generates labeled attack traffic using NS-3, streams it through Apache Kafka, detects attacks in real-time with Apache Flink, trains an ML classifier with Apache Spark, and visualizes everything on a live dashboard.
 
 ### Architecture
 
@@ -289,7 +289,7 @@ FLINK_OUTPUT_PATH=hdfs://namenode:9000/flink-output
 
 3-stage Docker build:
 1. Build **liboqs** from source (Kyber-768, Dilithium-3)
-2. Build **NS-3.41** with PQG6 scratch module linked against liboqs
+2. Build **NS-3.41** with PQ6G scratch module linked against liboqs
 3. Runtime image with Python + confluent-kafka for Kafka export
 
 ### Flink Processor
